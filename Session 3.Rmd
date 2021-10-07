@@ -1,0 +1,109 @@
+---
+title: "session 3"
+author: "Nawal"
+date: "10/7/2021"
+output: pdf_document
+---
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+letters[1:5]
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+letters[seq(1, length(letters), 2)]
+
+```
+
+
+```{r}
+paste('Count',1:10,sep=' ')
+```
+
+```{r}
+paste(letters[seq(1, length(letters), 2)],sep='',collapse='#')
+```
+```{r}
+paste(letters[seq(1, length(letters), 2)],sep='',collapse=' $ ')
+```
+
+
+```{r}
+print(pi)
+```
+
+
+```{r}
+ round(pi, digits=2)
+```
+
+
+```{r}
+sqrt(pi)
+```
+
+```{r}
+print(pi^5)
+```
+
+```{r}
+seq(0, 1, by = 0.02)
+```
+
+```{r}
+seq(1, 2, by = (1/12))
+```
+
+```{r}
+runif(1)
+```
+
+```{r}
+runif(1:10)
+```
+```{r}
+runif(10, min=0, max=100)
+```
+```{r}
+runif(20)*11
+floor(runif(20)*11)
+```
+
+
+```{r}
+sample(1:10,5)
+```
+```{r}
+animals <- c('dog', 'cat', 'mouse', 'uniconr', 'bear', 'snake', 'whale', 'bull' )
+
+"dog" %in% animals
+```
+
+```{r}
+(c("cat", "snake") %in% animals)
+```
+```{r}
+sum(c("cat", "snake") %in% animals)
+```
+
+
+```{r}
+sum(startsWith(animals,"b"))
+```
+
+
+```{r}
+l <- list('name', 5, letters[1:5])
+```
+```
